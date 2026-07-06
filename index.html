@@ -18,10 +18,14 @@
 
   <style>
     :root {
-      --bg: #faf7f2;
-      --ink: #232019;
-      --muted: #6b6459;
-      --accent: #a8542f;
+      --bg-start: #0a0a0a;
+      --bg-end: #000000;
+      --ink: #f2f2f0;
+      --muted: #b9c2d0;
+      --accent: #2563eb;
+      --glow: 0 0 10px rgba(37, 99, 235, 0.6), 0 0 20px rgba(37, 99, 235, 0.4), 0 0 30px rgba(37, 99, 235, 0.2);
+      --glow-soft: 0 0 8px rgba(37, 99, 235, 0.45), 0 0 16px rgba(37, 99, 235, 0.25);
+      --glow-strong: 0 0 10px rgba(37, 99, 235, 0.8), 0 0 20px rgba(37, 99, 235, 0.6), 0 0 30px rgba(37, 99, 235, 0.4);
     }
 
     * {
@@ -39,7 +43,7 @@
       justify-content: center;
       min-height: 100vh;
       padding: 1.5rem;
-      background: var(--bg);
+      background: radial-gradient(ellipse at 50% 40%, var(--bg-start) 0%, var(--bg-end) 100%);
       color: var(--ink);
       font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
       -webkit-font-smoothing: antialiased;
@@ -57,6 +61,7 @@
       font-size: clamp(2rem, 5vw, 2.75rem);
       letter-spacing: 0.01em;
       color: var(--ink);
+      text-shadow: var(--glow);
     }
 
     p.subtitle {
@@ -64,6 +69,7 @@
       font-size: 1.05rem;
       color: var(--muted);
       letter-spacing: 0.01em;
+      text-shadow: var(--glow-soft);
     }
 
     .links {
@@ -83,19 +89,22 @@
       letter-spacing: 0.02em;
       border-bottom: 1px solid transparent;
       padding-bottom: 2px;
-      transition: color 0.2s ease, border-color 0.2s ease;
+      text-shadow: var(--glow-soft);
+      transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
     }
 
     .links a:hover,
     .links a:focus-visible {
       color: var(--accent);
       border-color: var(--accent);
+      text-shadow: var(--glow-strong);
     }
 
     .links svg {
       width: 16px;
       height: 16px;
       fill: currentColor;
+      filter: drop-shadow(0 0 6px rgba(37, 99, 235, 0.5));
     }
   </style>
 </head>
