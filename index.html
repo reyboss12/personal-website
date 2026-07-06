@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reyhan Haider</title>
+  <meta name="description" content="Reyhan Haider — Student at Yale." />
+
+  <meta property="og:title" content="Reyhan Haider" />
+  <meta property="og:description" content="Student at Yale." />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Reyhan Haider" />
+  <meta name="twitter:description" content="Student at Yale." />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --ink: #232019;
+      --muted: #6b6459;
+      --accent: #a8542f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 1.5rem;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    main {
+      text-align: center;
+      max-width: 28rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: 500;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      letter-spacing: 0.01em;
+      color: var(--ink);
+    }
+
+    p.subtitle {
+      margin: 0.6rem 0 2.25rem;
+      font-size: 1.05rem;
+      color: var(--muted);
+      letter-spacing: 0.01em;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.75rem;
+    }
+
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 0.95rem;
+      letter-spacing: 0.02em;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .links a:hover,
+    .links a:focus-visible {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .links svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Reyhan Haider</h1>
+    <p class="subtitle">Student at Yale</p>
+
+    <div class="links">
+      <a href="https://www.linkedin.com/in/reyhan-haider-906652240/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.27 2.38 4.27 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://x.com/rsh_257" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7.1l-5.5-7.2L4.4 22H1.3l8.1-9.3L1 2h7.3l5 6.6L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>
+        Twitter
+      </a>
+    </div>
+  </main>
+</body>
+</html>
